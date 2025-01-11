@@ -4,14 +4,14 @@ const TradingViewChart = ({ symbol }) => {
   const timeframes = ['1H', '24H', '7D', '1M', '3M', '6M', '1Y', 'ALL'];
   
   return (
-    <div className="bg-white rounded-lg p-6 mb-6">
-      <div className="flex justify-between items-center mb-4">
+    <div className="bg-white rounded-lg p-4 sm:p-6 mb-6">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 mb-4">
         <h2 className="text-xl font-bold">{symbol} Price Chart (USD)</h2>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2 w-full sm:w-auto">
           {timeframes.map((timeframe) => (
             <button
               key={timeframe}
-              className={`px-3 py-1 rounded-lg text-sm font-medium 
+              className={`px-3 py-1 rounded-lg text-sm font-medium flex-1 sm:flex-none
                 ${timeframe === '7D' 
                   ? 'bg-blue-500 text-white' 
                   : 'text-gray-500 hover:bg-gray-100'}`}

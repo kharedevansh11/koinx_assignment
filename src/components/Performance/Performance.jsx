@@ -67,7 +67,8 @@ const Performance = ({ low24h, high24h, currentPrice }) => {
       {/* Fundamentals Section */}
       <div className="mt-8">
         <h2 className="text-xl font-bold mb-4">Fundamentals</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> */}
+        Change to: <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8">
           <div>
             <FundamentalRow label="Bitcoin Price" value="$16,815.46" />
             <FundamentalRow label="24h Low / 24h High" value="$16,382.07 / $16,874.12" />

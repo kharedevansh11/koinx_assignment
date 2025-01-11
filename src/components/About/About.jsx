@@ -41,7 +41,8 @@ const About = ({ coinId, description }) => {
 
         <div className="border-t border-gray-200 pt-6">
           <h3 className="text-xl font-bold mb-6">Already Holding Bitcoin?</h3>
-          <div className="grid md:grid-cols-2 gap-4">
+          {/* <div className="grid md:grid-cols-2 gap-4"> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-gradient-to-r from-green-400 to-blue-500 rounded-lg p-6 text-white">
               <div className="flex items-center gap-4">
                 <img src={about1} alt="Calculator" className="w-15 h-15" />

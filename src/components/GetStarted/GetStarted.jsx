@@ -2,7 +2,8 @@ import React from 'react';
 import Frame from "../../assets/Frame.png"
 const GetStarted = () => {
   return (
-    <div className="bg-blue-600 rounded-lg p-8 text-white text-center mb-6">
+    // <div className="bg-blue-600 rounded-lg p-8 text-white text-center mb-6">
+    <div className="bg-blue-600 rounded-lg p-4 sm:p-8 text-white text-center mb-6">
       <h2 className="text-2xl font-bold mb-4">
         Get Started with KoinX<br />for FREE
       </h2>
