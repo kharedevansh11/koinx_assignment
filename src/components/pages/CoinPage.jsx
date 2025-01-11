@@ -9,6 +9,7 @@ import TabNavigation from '../Navigation/TabNavigation';
 import Performance from '../Performance/Performance';
 import Sentiment from '../Sentiment/Sentiment';
 import About from '../About/About';
+import GetStarted from '../GetStarted/GetStarted';
 import Tokenomics from '../Tokenomics/Tokenomics';
 import Team from '../Team/Team';
 
@@ -44,6 +45,7 @@ const CoinPage = () => {
         </div>
         
         <div className="lg:w-1/3">
+            <GetStarted />
           <TrendingCoins coins={trendingCoins} />
         </div>
       </div>
